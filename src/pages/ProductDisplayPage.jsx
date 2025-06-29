@@ -63,7 +63,7 @@ const ProductDisplayPage = () => {
   const fetchRelatedProducts = async (category) => {
     try {
       setRelatedLoading(true)
-      const response = await Axios.post('http://localhost:8080/api/product/get-product-by-category', {
+      const response = await Axios.post('/api/product/get-product-by-category', {
         category: category
       })
 

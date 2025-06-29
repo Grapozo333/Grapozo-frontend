@@ -1,4 +1,6 @@
-export const baseURL = "http://localhost:8080"
+export const baseURL = typeof window !== 'undefined' && window.location.hostname !== 'localhost'
+  ? "https://grapozo-backend.onrender.com"
+  : "http://localhost:8080"
 const SummaryApi = {
     register: { url: '/api/user/register', method: 'post' },
     login: { url: '/api/user/login', method: 'post' },
