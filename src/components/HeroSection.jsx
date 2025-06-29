@@ -303,7 +303,7 @@ export default function GroceryHero() {
           {/* Left Content - Image Banner */}
           <div className="space-y-8">
             {/* Dynamic Image Banner */}
-            <div className="relative w-full h-80 bg-white rounded-2xl shadow-xl overflow-hidden group z-20">
+            <div className="relative w-9/10 h-80 bg-white rounded-2xl shadow-xl overflow-hidden group z-20">
               {/* Banner Images */}
               <div className="relative w-full h-full ">
                 {bannerImages.map((image, index) => (
